@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables In JS</title>
+  </head>
+  <body>
+    <h1>Variables In JS</h1>
+    <p>Three Types of Variables :-</p>
+    <ul>
+      <li>
+        var => It was used Before ES6
+        <mark>(Note : -Don't use This Variables NOW)</mark>
+      </li>
+      <br />
+      <li>let => It was introduce in ES6. <mark>Use This Variables</mark></li>
+      <br />
+      <li>
+        const => This variable is
+        <mark>Constant i.e we can't change the Stored Values in It</mark>
+      </li>
+    </ul>
+    <hr>
+    <h2>Rules of Declaring a variable</h2>
+    <p>Always Start With $, _,  alphabet</p>
+
+    <script>
+      // Operators
+
+      // = => Assignment Operator
+
+      //  1. var
+
+      //   var marks; // Declaration of a Variable
+      //   console.log(marks);    // undfined
+
+      //   marks = 90; // Assignment
+
+      //   console.log("marks => ", 90);   // 90
+
+      //   var marks = 33;    // Initialization  => Declaration + Assignment
+      //   console.log("marks => ", marks);
+
+      //   var marks = 90;      // Initialization
+      //   var marks = 50;      // Re - Declaration is Posssible
+      //   marks = 30;          // Re - Assignment is Posssible
+      //   console.log(marks);
+
+      //  2.  let
+
+      //   let marks; // Declaration of a Variable
+      //   console.log(marks); // undfined
+
+      //   marks = 90; // Assignment
+
+      //   console.log("marks => ", 90); // 90
+
+      //   let marks = 33; // Initialization  => Declaration + Assignment
+      //   console.log("marks => ", marks);
+
+      let marks = 90;
+      //   let marks = 50;      // Re - Declaration is Not Posssible
+      marks = 99; // Re - Assignment is Posssible
+      console.log(marks);
+
+      //   name = "Rohan"       // kabhi Nhi Krni
+      //   console.log(name);
+
+      // 3. const
+
+      const fav_singer = "Kinjal Dave"; // Initialization
+      //   const fav_singer = "Kinjal Dave";    // Re - Declaration is NOT Posssible
+      fav_singer = "Kinjal"; // Re - Assignment is NOT Posssible
+      console.log(fav_singer);
+    </script>
+  </body>
+</html>

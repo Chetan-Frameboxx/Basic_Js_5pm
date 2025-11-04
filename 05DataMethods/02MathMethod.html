@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Method in JS</title>
+  </head>
+  <body>
+    <h1>Math Method in JS</h1>
+
+    <div id="para"></div>
+
+    <script>
+      let a = 6.4;
+
+      console.log(Math.floor(a));
+      console.log(Math.ceil(a));
+      console.log(Math.PI);
+      console.log(parseFloat(Math.PI.toFixed(2)));
+      console.log(Math.random());
+
+      let diceNum = Math.ceil(Math.random() * 6);
+
+      console.log(diceNum);
+
+      let para = document.getElementById("para");
+      para.innerHTML = diceNum;
+
+      console.log(Math.max(10, 20, 30, 40));
+      console.log(Math.min(10, 20, 30, 40));
+
+      console.log(Math.pow(4, 2));
+      console.log(Math.sqrt(81));
+
+    </script>
+  </body>
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String -->
