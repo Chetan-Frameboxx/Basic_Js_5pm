@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM</title>
+  </head>
+  <body>
+    <h1>BOM</h1>
+    <a href="https://www.google.com">Google</a>
+    <button onclick="history.back()">Go Back </body>
+    <button onclick="history.forward()">Go Forward</button>
+
+    <hr />
+    <button onclick="handleChange()">
+      Go to Google
+    </button>
+    <!-- <button onclick="window.location.href='https://google.com'">
+      Go to Google
+    </button> -->
+    <button onclick="location.reload()">Reload Page</button>
+
+    <script>
+      console.log(window);
+      // console.log(window.alert("Namaste Bharat"));
+      // console.log(window.confirm("Are you Sure?"));
+      // let store = window.prompt("What is Your Name?")
+      // console.log(store);
+
+      //   console.log(window.innerHeight);
+      //   console.log(window.innerWidth);
+
+      //   window.myName = "Chetan";
+      //   console.log(myName);
+
+
+
+      function handleChange() {
+        window.location.href ='https://www.google.com'
+      }
+    </script>
+ 
+</html>
