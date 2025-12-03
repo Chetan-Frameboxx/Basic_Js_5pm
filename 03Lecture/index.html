@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables In JS</title>
+  </head>
+  <body>
+    <h1>Variables In JS</h1>
+    <p>It is like a Container , which stores some data</p>
+    <ul>
+      <li>var - was used before ES6</li>
+      <li>let - was used introduce in ES6</li>
+      <li>const - constant variable (That can't be changed)</li>
+    </ul>
+
+    <h2>Rules for Declaring Variables In JS</h2>
+    <ul>
+      <li>always start with _, alpha, $</li>
+      <li>Never use Reserved words from javascript</li>
+    </ul>
+
+    <script>
+        
+        // Never do such kind of things
+        
+        // let function = 10;
+        
+        // console.log(function);
+        
+        // aboveone
+
+
+
+
+        // Variables In JS
+
+
+        // 1. var 
+
+        // var a ;   // declaration
+        // a = 10;   // Assignment
+
+        var ramesh = 90;       // Initialization 
+        var ramesh = 30;       // Re -declaration is Possible
+        ramesh = 95;           // Re - Assignment is Possible
+        console.log(ramesh);
+
+
+
+        // 2. let 
+
+
+        let name = "Suresh";        // Initialization 
+        // let name = "Ramesh";    // Re -declaration is not Possible
+        name = "Suresh Patel";    // Re - Assignment is Possible
+        console.log(name);
+        
+
+
+
+        // 3. const 
+
+
+        const fav_player = "Mahendra Singh Dhoni";           // Initialization 
+        // const fav_player = "Virat Kohli";                 // Re -declaration is not Possible 
+        // fav_player = "Rohit Sharma";                         // Re -Assignment is not Possible 
+
+ 
+        console.log(fav_player);
+
+
+
+
+        // BOM 
+
+
+        let storeName = prompt("What is Your Name?")
+
+        console.log(storeName);
+        
+        
+
+
+
+
+
+
+
+
+
+        // Global Scope 
+
+        // Block Scope 
+        
+        // {} => Scope 
+        
+        // var num1 = 20
+        
+        // {
+        //     let num2 = 50
+            
+        // }
+        // console.log(num2);
+
+        // { 
+        //     console.log(num1);
+
+        // }
+
+        // console.log(num2);
+        
+
+
+    </script>
+  </body>
+</html>
