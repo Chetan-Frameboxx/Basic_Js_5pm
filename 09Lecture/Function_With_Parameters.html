@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function With Parameters</title>
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <h1>Function With Parameters</h1>
+
+    <button onclick="handleClick()">Click Me</button>
+
+    <!-- <div
+      id="box"
+      onmouseenter="handleMouseEnter() "
+      onmouseleave="handleMouseLeave()"
+      ></div> -->
+    <div id="box"></div>
+
+    <script>
+      let box = document.getElementById("box");
+
+
+      box.addEventListener("mouseenter", function () {
+        document.getElementById("body").style.backgroundColor = "gold";
+        document.getElementById("body").style.color = "black";
+      });
+
+      box.addEventListener("mouseleave", function () {
+        document.getElementById("body").style.backgroundColor = "black";
+        document.getElementById("body").style.color = "white";
+      });
+
+      // Add the event listeners
+
+      // Function With Parameters
+
+      // When Declaring a function we pass some parameters in the parenthesis (param1, param2)
+
+      //   function addTwoNum(a, b) {
+      //     return a + b;
+      //   }
+
+      // while Calling a function we pass some Arguments in the parenthesis (arg1, arg2)
+
+      // arg1 <=> param1
+      // arg2 <=> param2
+
+      // console.log(addTwoNum(4,5));
+      // console.log(addTwoNum(8,5));
+
+      // Function Return Something
+
+      // function myFun() {
+      //     console.log("Hi");
+      //     return console.log("Hello");
+      //     console.log("Bye");
+
+      // }
+
+      // myFun()
+
+      // Scope Inside Function
+
+      //   let a = 10;
+
+      //   function handleScope() {
+      //     let b = 10;
+      //     console.log(a);
+      //   }
+
+      //   // console.log(b);
+
+      //   handleScope();
+    </script>
+  </body>
+</html>
