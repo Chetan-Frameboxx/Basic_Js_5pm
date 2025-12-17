@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let word = "Helulo";
+      //   console.log(word);
+
+      //   //   console.log(word.length);
+
+      //   let count = 0;
+      //   let vowels = ["a", "e", "i", "o", "u"];
+      //   for (let k = 0; k < word.length; k++) {
+      //     if (vowels.includes(word[k])) {
+      //       count++;
+      //     }
+      //   }
+      //   console.log(count);
+
+      // Write a function that takes a list of numbers and returns a new list without duplicates.
+
+      const numbers = [10,10, 20, 20, 4, 5];
+      const evenNumbers = []; 
+
+      for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] === numbers[i]) {
+          evenNumbers.push(numbers[i]); 
+        }
+      }
+
+      console.log(evenNumbers); 
+    </script>
+  </body>
+</html>
