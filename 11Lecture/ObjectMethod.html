@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <h1>Object Method</h1>
+
+    <script>
+      // Object Method
+
+      let myObj = {
+        name: "Rohan",
+        age: 20,
+        isLoggedIn: true,
+        sayHi: function () {
+          console.log("Hello, my name is " + this.name);
+        },
+        courses: {
+            Wd: 20000,
+            FSD: 90000,
+        }
+      };
+
+      console.log(myObj?.courses?.FD);
+      myObj.sayHi()
+      // console.log(myObj.name);
+      // console.log(myObj.age);
+      // console.log(myObj.isLoggedIn);
+
+      // console.log(Object.keys(myObj));
+      // console.log(Object.values(myObj));
+      // console.log(Object.entries(myObj));
+
+      //   Object.freeze(myObj)
+      //   Object.seal(myObj);
+      //   myObj.age = 25;
+      //   delete myObj.name;
+      //   console.log(myObj);
+
+      // let obj = {}
+      // let obj = new Object
+      // let obj =  Object.create(myObj)
+
+      // obj.name = "Rahul"
+      // console.log(obj);
+
+    //   let obj1 = { a: 1, b: 2 };
+    //   let obj2 = { c: 3, d: 4 };
+
+    //   console.log(obj1);
+    //   console.log(obj2);
+
+      // console.log(obj1 + obj2);
+
+    //   const obj3 = Object.assign({}, obj1, obj2);
+    //   console.log(obj3);
+
+    //   console.log(obj1);
+    //   console.log(obj2);
+
+    //   console.log(Object.hasOwn(myObj, "age"));
+    </script>
+  </body>
+</html>
