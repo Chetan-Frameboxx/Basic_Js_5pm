@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get HTML Element</title>
+  </head>
+  <body>
+    <h1>Get HTML Element</h1>
+    <br /><br />
+    <input
+      type="text"
+      name="first"
+      class="same"
+      id="inpData"
+      value="anything"
+    />
+    <br /><br />
+
+    <!-- let first  = "anything" -->
+    <!-- <form action="" method="" enctype="application/x-www-form-urlencoded"></form> -->
+
+    <!-- <input type="text" name="first" class="same" id="inpData" > <br><br> -->
+    <input type="text" name="first" class="same" id="inpData2" /> <br /><br />
+    <input type="text" name="third" class="same" id="inpData3" /> <br /><br />
+    <input type="text" name="fourth" class="same" id="inpData4" /> <br /><br />
+    <input type="text" name="fifth" class="same" id="inpData5" /> <br /><br />
+    <input type="text" name="sixth" class="same" id="inpData6" />
+
+    <script>
+      // Get HTML Element
+
+      // 1. getElementById
+
+      // let inpData = document.getElementById("inpData");
+      // console.log(inpData);
+      // console.log(inpData.value);
+
+      // 2. getElementsByClassName
+
+      // let inpData = document.getElementsByClassName("same");
+      // console.log(inpData);
+      // console.log(inpData[0].value);
+      // console.log(inpData[1].value);
+
+      // 3. getElementsByClassName
+
+      // let inpData = document.getElementsByClassName("first");
+      // console.log(inpData);
+      // console.log(inpData[0].value);
+      // console.log(inpData[1].value);
+
+      // 4. getElementsByTagName
+
+    //   let inpData = document.getElementsByTagName("input");
+    //   console.log(inpData);
+    //   console.log(inpData[0].value);
+    //   console.log(inpData[1].value);
+
+      // 5. querySelector
+
+    //   let inpData = document.querySelector(".same");
+    //   console.log(inpData);
+    //   console.log(inpData.value);
+
+      // 6. getElementsByTagName
+
+      let inpData = document.querySelectorAll(".same");
+      console.log(inpData);
+      console.log(inpData[0].value);
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
