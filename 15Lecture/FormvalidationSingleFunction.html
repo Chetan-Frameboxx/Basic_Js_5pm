@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <h1>Form validation</h1>
+
+    <input type="text" name="uname" id="username" onblur="handleValidation(this, 'error1', 'username')" />
+    <span id="error1"></span>
+    <br /><br />
+    <input
+      type="password"
+      name="upass"
+      id="userpass"
+      onblur="handleValidation(this, 'error2', 'Password')"
+    />
+    <span id="error2"></span>
+    <br /><br />
+
+    <script>
+
+      function handleValidation(e, spnId, msg) {
+        if (e.value == "") {
+          console.log("username is Required");
+          document.getElementById(spnId).innerText = `${msg} is Required`;
+          document.getElementById(spnId).style.color = "red";
+        } else {
+          console.log(e.value);
+          document.getElementById(spnId).innerText = "";
+        }
+      }
+
+   
+    </script>
+  </body>
+</html>

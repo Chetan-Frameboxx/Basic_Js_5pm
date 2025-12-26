@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <h1>Form validation</h1>
+
+    <input type="text" name="uname" id="username" onblur="checkUserName()" />
+    <span id="error1"></span>
+    <br /><br />
+    <input
+      type="password"
+      name="upass"
+      id="userpass"
+      onblur="checkUserPass()"
+    />
+    <span id="error2"></span>
+    <br /><br />
+
+    <script>
+      let username = document.getElementById("username");
+      let userpass = document.getElementById("userpass");
+
+      function checkUserName() {
+        if (username.value == "") {
+          console.log("username is Required");
+          document.getElementById("error1").innerText = "username is Required";
+          document.getElementById("error1").style.color = "red";
+        } else {
+            console.log(username.value);
+            document.getElementById("error1").innerText = "";
+        }
+      }
+
+      function checkUserPass() {
+        if (userpass.value == "") {
+          console.log("userpass is Required");
+          document.getElementById("error2").innerText = "Password is Required";
+          document.getElementById("error2").style.color = "red";
+        } else {
+            console.log(userpass.value);
+            document.getElementById("error2").innerText = "";
+        }
+      }
+    </script>
+  </body>
+</html>

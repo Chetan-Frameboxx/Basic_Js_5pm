@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Time</title>
+  </head>
+  <body>
+    <h1>Set Time</h1>
+
+    <button id="btn">Stop</button>
+
+    <script>
+      console.log("Hi");
+      console.log("Hello");
+      //   setTimeout(() => {
+      //     console.log("Namaste");
+      //   }, 5000);
+      let timeint = setInterval(() => {
+        console.log("Namaste Bharat");
+      }, 2000);
+      console.log("Bye");
+
+      btn.addEventListener("click", function () {
+        clearInterval(timeint);
+      });
+    </script>
+  </body>
+</html>
